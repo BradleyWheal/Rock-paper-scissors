@@ -1,0 +1,71 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+
+
+body {
+  text-align: center;
+}
+.scoreBoard{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+  width: 300px;
+}
+h2:first-child{
+  text-align: left;
+ 
+} 
+img {
+  cursor: pointer;
+}
+.selectedHandImage {
+  height: 254.39px;
+}
+.selectedHandImage img {
+  width: 180px;
+  height: 250px;
+}
+.hidden {
+  display: none;
+}
+.selectedImage {
+  position: relative;
+}
+.comp img {
+  transform: rotate(180deg);
+  cursor: auto;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
