@@ -11,12 +11,29 @@
 document.querySelector('#rock').addEventListener('click', rock);
 document.querySelector('#paper').addEventListener('click', paper);
 document.querySelector('#scissors').addEventListener('click', scissors);
+document.querySelector('body').addEventListener('click', playMusic)
+
+let rockSound = document.querySelector('#rockSound')
+rockSound.volume = 0.3;
+
+let paperSound = document.querySelector('#paperSound')
+paperSound.volume = 0.3;
+
+let scissorsSound = document.querySelector('#scissorsSound')
+scissorsSound.volume = 0.3;
+
+function playMusic() {
+ let gameMusic = document.querySelector('#gameMusic');
+ gameMusic.play();
+ gameMusic.volume = 0.1; 
+}
 
 function rock() {
   userHand = 'rock';
   document.querySelector('#selectedRock').classList.remove('hidden')
   document.querySelector('#selectedPaper').classList.add('hidden')
   document.querySelector('#selectedScissors').classList.add('hidden')
+  rockSound.play()
   rockPaperScissors();
 }
 
@@ -25,6 +42,7 @@ function paper() {
   document.querySelector('#selectedPaper').classList.remove('hidden')
   document.querySelector('#selectedRock').classList.add('hidden')
   document.querySelector('#selectedScissors').classList.add('hidden')
+  paperSound.play()
   rockPaperScissors();
 }
 
@@ -33,6 +51,7 @@ function scissors() {
   document.querySelector('#selectedScissors').classList.remove('hidden')
   document.querySelector('#selectedRock').classList.add('hidden')
   document.querySelector('#selectedPaper').classList.add('hidden')
+  scissorsSound.play()
   rockPaperScissors();
 }
 
