@@ -12,22 +12,18 @@
      line-height: 0;
      height: 0;
 }
-
 .clear {
 	clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
+
 html {
   font-size: 62.5%;
 }
 
-
-
 body {
   text-align: center;
+  
 }
 .scoreBoard{
   display: flex;
@@ -66,6 +62,4 @@ img {
   transform: rotate(180deg);
   cursor: auto;
 }
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+
