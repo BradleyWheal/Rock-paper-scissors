@@ -14,13 +14,13 @@ document.querySelector('#scissors').addEventListener('click', scissors);
 document.querySelector('body').addEventListener('click', playMusic)
 
 let rockSound = document.querySelector('#rockSound')
-rockSound.volume = 0.3;
+rockSound.volume = 0.1;
 
 let paperSound = document.querySelector('#paperSound')
-paperSound.volume = 0.3;
+paperSound.volume = 0.1;
 
 let scissorsSound = document.querySelector('#scissorsSound')
-scissorsSound.volume = 0.3;
+scissorsSound.volume = 0.1;
 
 function playMusic() {
  let gameMusic = document.querySelector('#gameMusic');
