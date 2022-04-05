@@ -1,13 +1,5 @@
 // ROCK PAPER SCISSORS
 
-// ask user for an input via prompt, has to be either rock, paper or scissors.
-
-// If different input then loop and ask for another.
-
-// use Math.random to get a random number between one and three. Assign each number to rock, paper , scissor,(1 = rock, 2 = paper, etc.)
-
-// taking the user input determine if the user wins or if the computer wins
-
 document.querySelector('#rock').addEventListener('click', rock);
 document.querySelector('#paper').addEventListener('click', paper);
 document.querySelector('#scissors').addEventListener('click', scissors);
